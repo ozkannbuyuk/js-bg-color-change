@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Background Color Change</title>
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="colorBar">
+        <div onclick="changeColor('colorGrey')" class="grey box">
+            <a id="colorGrey">#95a5a6</a>
+        </div>
+        <div onclick="changeColor('colorYellow')" class="yellow box">
+            <a id="colorYellow">#f1c40f</a>
+        </div>
+        <div onclick="changeColor('colorTurquoise')" class="turquoise box">
+            <a id="colorTurquoise">#1abc9c</a>
+        </div>
+        <div onclick="changeColor('colorRed')" class="red box">
+            <a id="colorRed">#ff3838</a>
+        </div>
+        <div onclick="changeColor('colorAqua')" class="aqua box">
+            <a id="colorAqua">#00ffff</a>
+        </div>
+        <div onclick="changeColor('colorGreen')" class="green box">
+            <a id="colorGreen">#32ff7e</a>
+        </div>
+        <div onclick="changeColor('colorBrown')" class="brown box">
+            <a id="colorBrown">#a0522d</a>
+        </div>
+        <div onclick="changeColor('colorPurple')" class="purple box">
+            <a id="colorPurple">#9c88ff</a>
+        </div>
+    </div>
+
+    <script>
+        function changeColor(id) {
+            document.body.style.background = document.getElementById(id).innerHTML;
+        }
+    </script>
+</body>
+
+</html>
